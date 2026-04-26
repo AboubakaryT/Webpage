@@ -4,6 +4,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Marquee from "./components/Marquee";
+import { BrowserRouter, Route } from "react-router";
 
 const marqueeItems = [
   "Software Engineer",
@@ -16,6 +17,7 @@ const marqueeItems = [
 
 function App() {
   return (
+    <BrowserRouter>
     <>
       <Navbar />
       <Home />
@@ -25,7 +27,11 @@ function App() {
       <Education />
       <Marquee items={marqueeItems} />
       <Projects />
+      <Route>
+        
+      </Route>
     </>
+    </BrowserRouter>
   );
 }
 
