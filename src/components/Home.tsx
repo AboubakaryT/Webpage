@@ -22,9 +22,9 @@ export default function Home() {
   useEffect(() => {});
 
   return (
-    <main className="min-h-screen text-white">
+    <main className=" text-white">
       {/* Hero */}
-      <section className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12 pt-36 pb-24 px-8 max-w-6xl mx-auto">
+      <section className="flex flex-col md:items-center lg:flex-row lg:items-center lg:justify-between gap-12 pt-36 pb-24 px-8 max-w-6xl mx-auto">
 
         {/* Left */}
         <div className="flex flex-col text-center lg:text-left lg:max-w-2xl">

@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Marquee from "./components/Marquee";
 import { BrowserRouter, Route } from "react-router";
+import Contact from "./components/Contact";
 
 const marqueeItems = [
   "Software Engineer",
@@ -17,7 +18,6 @@ const marqueeItems = [
 
 function App() {
   return (
-    <BrowserRouter>
     <>
       <Navbar />
       <Home />
@@ -26,13 +26,11 @@ function App() {
       <Marquee items={marqueeItems} />
       <Education />
       <Marquee items={marqueeItems} />
-      <Projects />
-      <Route>
-        
-      </Route>
+      <Projects/>
+      <Marquee items={marqueeItems} />
+      <Contact/>
     </>
-    </BrowserRouter>
-  );
+  )
 }
 
 export default App;
