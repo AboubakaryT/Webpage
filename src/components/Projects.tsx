@@ -51,7 +51,7 @@ export default function Projects() {
     <div className="w-full flex items-center justify-center px-2 py-10">
 
       {/* Left */}
-      <button onClick={goToPrev} className="hidden md:bloick text-xl mr-4">
+      <button onClick={goToPrev} className="hidden md:block text-xl mr-4">
         <FaChevronLeft />
       </button>
 

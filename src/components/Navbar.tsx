@@ -1,3 +1,4 @@
+
 export default function Navbar() {
   return (
     <nav className="fixed top-0 z-10 w-screen bg-white border-b border-slate-100 shadow-sm">
@@ -15,7 +16,7 @@ export default function Navbar() {
             { label: "Experience", href: "/experience" },
             { label: "Projects", href: "/projects" },
             { label: "Contact", href: "/contact" },
-          ].map(({ label, href }) => (
+          ].map(({label, href }) => (
             <li key={label}>
               <a
                 href={href}
