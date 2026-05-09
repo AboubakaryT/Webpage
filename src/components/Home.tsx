@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
-
+import pfp from '/Users/abou/Documents/Webpage/src/assets/pfp.jpeg';
 const displayFont = { fontFamily: "'Cormorant Garamond', serif" };
 
 export default function Home() {
   const arr = [" a Software Engineer", " a Student", "a Leader", "Self-Driven", " a Builder"];
   const [index, setIndex] = useState(0);
-  const [displayedText, setDisplayedText] = useState("");
 
   function next() {
     setIndex((prev) => {
@@ -98,7 +97,7 @@ export default function Home() {
             {/* Decorative border offset */}
             <div className="absolute -inset-2 rounded-2xl border border-zinc-700 opacity-40" />
             <img
-              src="src/assets/pfp.jpeg"
+              src={pfp}
               alt="Aboubakary Traore"
               className="relative rounded-2xl w-64 sm:w-64 lg:w-96 object-cover transition-all duration-700"
             />

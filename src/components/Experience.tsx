@@ -1,3 +1,6 @@
+import liberty from "/Users/abou/Documents/Webpage/src/assets/images.png";
+import zof from "/Users/abou/Documents/Webpage/src/assets/Zof.jpeg";
+import nvidia from "/Users/abou/Documents/Webpage/src/assets/nvidia.jpg";
 const displayFont = { fontFamily: "'Cormorant Garamond', serif" };
 
 export default function Experience() {
@@ -5,7 +8,7 @@ export default function Experience() {
     {
       title: "Technology Support Intern",
       company: "Liberty Mutual Insurance",
-      img: "src/assets/images.png",
+      img: liberty,
       location: "Plano, TX",
       date: "Incoming Summer 2026",
       description: "Incoming Technology Support Intern.",
@@ -13,7 +16,7 @@ export default function Experience() {
     {
       title: "Software Engineer Intern",
       company: "Zof AI",
-      img: "src/assets/Zof.jpeg",
+      img: zof,
       location: "Remote",
       date: "Jun 2025 – Sep 2025",
       description:
@@ -22,7 +25,7 @@ export default function Experience() {
     {
       title: "Participant",
       company: "NVIDIA Summer Bridge",
-      img: "src/assets/nvidia.jpg",
+      img: nvidia,
       location: "Remote",
       date: "Jun 2025 – Aug 2025",
       description:

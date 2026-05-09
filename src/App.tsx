@@ -4,7 +4,6 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Marquee from "./components/Marquee";
-import { BrowserRouter, Route } from "react-router";
 import Contact from "./components/Contact";
 
 const marqueeItems = [

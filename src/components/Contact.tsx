@@ -5,8 +5,7 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [inputError, setInputError] = useState(false);
-
-  async function handleSubmit(e) {
+  async function handleSubmit(e : React.MouseEvent<HTMLButtonElement>) {
     e.preventDefault();
     if (name == "" || email == "" || message == "") {
       setInputError(true);

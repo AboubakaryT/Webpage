@@ -1,3 +1,5 @@
+import ub from "/Users/abou/Documents/Webpage/src/assets/UB.png";;
+import lehman from "/Users/abou/Documents/Webpage/src/assets/Lehman.webp";
 const displayFont = { fontFamily: "'Cormorant Garamond', serif" };
 
 export default function Education() {
@@ -5,7 +7,7 @@ export default function Education() {
     {
       school: "University at Buffalo",
       degree: "B.S. in Computer Science, Concentration in AI",
-      img: "src/assets/UB.png",
+      img: ub,
       location: "Buffalo, NY",
       date: "2025 – 2028",
       description:
@@ -14,7 +16,7 @@ export default function Education() {
     {
       school: "Lehman College",
       degree: "Computer Science",
-      img: "src/assets/Lehman.webp",
+      img: lehman,
       location: "Bronx, NY",
       date: "2024 – 2025",
       description:
