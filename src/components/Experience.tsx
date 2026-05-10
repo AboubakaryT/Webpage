@@ -34,7 +34,7 @@ export default function Experience() {
   ];
 
   return (
-    <section className="px-8 pb-24 max-w-6xl mx-auto">
+    <section id="experince" className="px-8 pb-24 max-w-6xl mx-auto">
       {/* Section header */}
       <div className="flex items-end justify-between mb-16 border-b border-zinc-800 pb-6">
         <h2

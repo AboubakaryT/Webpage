@@ -20,7 +20,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="flex mr-10 ml-10 items-center justify-center pb-10">
+    <div id="contact" className="flex mr-10 ml-10 items-center justify-center pb-10">
       <div className="flex flex-col bg-zinc-950 border border-zinc-800 w-96 lg:w-1/2 items-center rounded-xl p-8 transition-colors duration-300 hover:border-zinc-600">
         
         <h1 className="text-white font-medium text-2xl leading-tight">

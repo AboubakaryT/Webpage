@@ -21,7 +21,7 @@ export default function Home() {
   useEffect(() => {});
 
   return (
-    <main className=" text-white">
+    <main id = "home" className=" text-white">
       {/* Hero */}
       <section className="flex flex-col md:items-center lg:flex-row lg:items-center lg:justify-between gap-12 pt-36 pb-24 px-8 max-w-6xl mx-auto">
 

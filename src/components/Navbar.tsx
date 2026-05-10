@@ -13,10 +13,10 @@ export default function Navbar() {
         <ul className="flex items-center gap-4 lg:gap-8 text-sm font-medium text-slate-500">
           {[
             { label: "Home", href: "/" },
-            { label: "Experience", href: "/experience" },
-            { label: "Projects", href: "/projects" },
-            { label: "Contact", href: "/contact" },
-          ].map(({label, href }) => (
+            { label: "Experience", href: "#experince" },
+            { label: "Projects", href: "#projects" },
+            { label: "Contact", href: "#contact" },
+          ].map(({label,  href }) => (
             <li key={label}>
               <a
                 href={href}

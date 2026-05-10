@@ -48,7 +48,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="w-full flex items-center justify-center px-2 py-10">
+    <div id ="projects" className="w-full flex items-center justify-center px-2 py-10">
 
       {/* Left */}
       <button onClick={goToPrev} className="hidden md:block text-xl mr-4">
