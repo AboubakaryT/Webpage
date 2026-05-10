@@ -1,5 +1,5 @@
-import ub from "/Users/abou/Documents/Webpage/src/assets/UB.png";;
-import lehman from "/Users/abou/Documents/Webpage/src/assets/Lehman.webp";
+import ub from "../assets/UB.png";
+import lehman from "../assets/Lehman.webp";
 const displayFont = { fontFamily: "'Cormorant Garamond', serif" };
 
 export default function Education() {

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import pfp from '/Users/abou/Documents/Webpage/src/assets/pfp.jpeg';
+import pfp from '../assets/pfp.jpeg';
 const displayFont = { fontFamily: "'Cormorant Garamond', serif" };
 
 export default function Home() {

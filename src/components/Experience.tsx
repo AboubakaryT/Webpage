@@ -1,6 +1,6 @@
-import liberty from "/Users/abou/Documents/Webpage/src/assets/images.png";
-import zof from "/Users/abou/Documents/Webpage/src/assets/Zof.jpeg";
-import nvidia from "/Users/abou/Documents/Webpage/src/assets/nvidia.jpg";
+import liberty from "../assets/images.png";
+import zof from "../assets/Zof.jpeg";
+import nvidia from "../assets/nvidia.jpg";
 const displayFont = { fontFamily: "'Cormorant Garamond', serif" };
 
 export default function Experience() {
