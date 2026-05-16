@@ -77,7 +77,7 @@ export default function Home() {
           {/* CTA links */}
           <div className="fade-up fade-up-delay-4 flex gap-6 mt-10 justify-center lg:justify-start">
             <a
-              href="/experience"
+              href="#experince"
               className="text-sm text-white border-b border-white pb-0.5 hover:text-zinc-400 hover:border-zinc-400 transition-colors duration-200"
             >
               View Experience →
