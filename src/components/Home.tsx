@@ -18,8 +18,6 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {});
-
   return (
     <main id = "home" className=" text-white">
       {/* Hero */}
@@ -39,7 +37,7 @@ export default function Home() {
 
           {/* Tags row */}
           <div className="fade-up fade-up-delay-2 flex flex-wrap gap-2 justify-center lg:justify-start mb-6">
-            {["CS @ UB", "AI Concentration", "First-Gen", "Sophomore"].map((tag) => (
+            {["CS @ UB", "AI Concentration", "First-Gen", "Rising Junior"].map((tag) => (
               <span
                 key={tag}
                 className="text-xs px-3 py-1 rounded-full border border-zinc-700 text-zinc-400 tracking-wide uppercase"
@@ -68,7 +66,7 @@ export default function Home() {
             className="fade-up fade-up-delay-4 text-zinc-400 leading-relaxed"
             style={{ fontSize: "0.95rem", maxWidth: "520px" }}
           >
-            I'm a first-gen sophomore studying Computer Science at the University at Buffalo (UB)
+            I'm a first-gen rising Junior studying Computer Science at the University at Buffalo (UB)
             with a concentration in Artificial Intelligence. I've interned at an AI startup,
             represented my class in UB's Association for Computing Machinery (ACM), and built projects I'm genuinely proud of.
             I care deeply about my craft — but even more about the person I'm becoming through it.
