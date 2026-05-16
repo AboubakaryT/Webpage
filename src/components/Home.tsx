@@ -83,7 +83,7 @@ export default function Home() {
               View Experience →
             </a>
             <a
-              href="/projects"
+              href="#projects"
               className="text-sm text-zinc-500 border-b border-zinc-500 pb-0.5 hover:text-white hover:border-white transition-colors duration-200"
             >
               See Projects →
