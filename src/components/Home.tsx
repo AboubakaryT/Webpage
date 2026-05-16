@@ -34,7 +34,7 @@ export default function Home() {
             style={{ ...displayFont, fontSize: "clamp(3.5rem, 8vw, 7rem)", fontStyle: "italic" }}
           >
             Aboubakary<br />
-            <span style={{ fontStyle: "normal", fontWeight: 600 }}>Traore.</span>
+            <span style={{ fontStyle: "normal", fontWeight: 600 }}>Traore</span>
           </h1>
 
           {/* Tags row */}
@@ -68,9 +68,9 @@ export default function Home() {
             className="fade-up fade-up-delay-4 text-zinc-400 leading-relaxed"
             style={{ fontSize: "0.95rem", maxWidth: "520px" }}
           >
-            I'm a first-gen sophomore studying Computer Science at the University at Buffalo
+            I'm a first-gen sophomore studying Computer Science at the University at Buffalo (UB)
             with a concentration in Artificial Intelligence. I've interned at an AI startup,
-            represented my class in UB's ACM chapter, and built projects I'm genuinely proud of.
+            represented my class in UB's Association for Computing Machinery (ACM), and built projects I'm genuinely proud of.
             I care deeply about my craft — but even more about the person I'm becoming through it.
           </p>
 
