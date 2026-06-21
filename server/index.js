@@ -1,33 +1,48 @@
 require('dotenv').config();
 
-//import express
 const express = require("express");
 const app = express();
-//import resend
 const { Resend } = require('resend');
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-//cors
 const cors = require("cors");
-app.use(cors());
+const allowedOrigins = [
+  "https://atraore.com",
+  "https://www.atraore.com",
+  "http://localhost:5173",
+];
 
-
-//req = everything the user sent.
-//res = what I send back to the frontend
+app.use(cors({ origin: allowedOrigins }));
 app.use(express.json());
 
-app.post('/contact', async (req, res) => {
-await resend.emails.send({
-  from: 'onboarding@resend.dev',
-  replyTo: req.body.email,
-  to: 'atraore.dev@gmail.com',
-  subject: 'Hello World',
-  html: `Name: ${req.body.name}, Email: ${req.body.email}, Message: ${req.body.message}`
+app.get("/", (_req, res) => {
+  res.json({ status: "ok" });
 });
-    res.json({ sucess: true });
-})
 
+app.post('/contact', async (req, res) => {
+  const { name, email, message } = req.body;
 
-app.listen(3000, ()=>{
-    console.log('Server is running on port 3000');
-})
+  if (!name || !email || !message) {
+    return res.status(400).json({ success: false, error: "Missing fields" });
+  }
+
+  try {
+    await resend.emails.send({
+      from: 'onboarding@resend.dev',
+      replyTo: email,
+      to: 'atraore.dev@gmail.com',
+      subject: 'New contact form message',
+      html: `Name: ${name}, Email: ${email}, Message: ${message}`,
+    });
+    res.json({ success: true });
+  } catch (error) {
+    console.error("Failed to send email:", error);
+    res.status(500).json({ success: false, error: "Failed to send email" });
+  }
+});
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});

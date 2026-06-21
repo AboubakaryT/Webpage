@@ -65,7 +65,7 @@ export default function Home() {
           <p
             className="fade-up fade-up-delay-4 text-zinc-400 leading-relaxed"
             style={{ fontSize: "0.95rem", maxWidth: "520px" }}
-          >
+            >
             I'm a first-gen rising Junior studying Computer Science at the University at Buffalo (UB)
             with a concentration in Artificial Intelligence. I've interned at an AI startup,
             represented my class in UB's Association for Computing Machinery (ACM), and built projects I'm genuinely proud of.

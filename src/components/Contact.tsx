@@ -1,21 +1,42 @@
 import { useState } from "react";
 
+const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:3000";
+
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [inputError, setInputError] = useState(false);
-  async function handleSubmit(e : React.MouseEvent<HTMLButtonElement>) {
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  async function handleSubmit(e: React.MouseEvent<HTMLButtonElement>) {
     e.preventDefault();
     if (name == "" || email == "" || message == "") {
       setInputError(true);
-    } else {
-      setInputError(false);
-      await fetch("http://localhost:3000/contact", {
+      setSubmitStatus("idle");
+      return;
+    }
+
+    setInputError(false);
+    setSubmitStatus("loading");
+
+    try {
+      const response = await fetch(`${API_URL}/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, message }),
       });
+
+      if (!response.ok) {
+        throw new Error("Request failed");
+      }
+
+      setSubmitStatus("success");
+      setName("");
+      setEmail("");
+      setMessage("");
+    } catch {
+      setSubmitStatus("error");
     }
   }
 
@@ -59,9 +80,10 @@ export default function Contact() {
 
         <button
           onClick={handleSubmit}
-          className="bg-zinc-100 text-black px-5 py-2 rounded-lg hover:bg-zinc-300 transition-colors duration-300 mt-6"
+          disabled={submitStatus === "loading"}
+          className="bg-zinc-100 text-black px-5 py-2 rounded-lg hover:bg-zinc-300 transition-colors duration-300 mt-6 disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          Submit
+          {submitStatus === "loading" ? "Sending..." : "Submit"}
         </button>
 
         {inputError && (
@@ -69,7 +91,16 @@ export default function Contact() {
             Error! One or more fields is empty!
           </p>
         )}
-        {!inputError && <p></p>}
+        {submitStatus === "success" && (
+          <p className="text-green-400 text-sm mt-3">
+            Message sent! I&apos;ll get back to you soon.
+          </p>
+        )}
+        {submitStatus === "error" && (
+          <p className="text-red-400 text-sm mt-3">
+            Something went wrong. Please try again later.
+          </p>
+        )}
       </div>
     </div>
   );
