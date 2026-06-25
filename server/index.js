@@ -9,6 +9,7 @@ const cors = require("cors");
 const allowedOrigins = [
   "https://atraore.com",
   "https://www.atraore.com",
+  "https://aboubakaryt.github.io",
   "http://localhost:5173",
 ];
 

@@ -6,12 +6,12 @@ const displayFont = { fontFamily: "'Cormorant Garamond', serif" };
 export default function Experience() {
   const experiences = [
     {
-      title: "Technology Support Intern",
+      title: "Technology Intern",
       company: "Liberty Mutual Insurance",
       img: liberty,
       location: "Plano, TX",
-      date: "Incoming Summer 2026",
-      description: "Incoming Technology Support Intern.",
+      date: "Jun 2026 - Aug 2026",
+      description: "Currently working at Liberty Mutual as a Technology Intern. :)",
     },
     {
       title: "Software Engineer Intern",
