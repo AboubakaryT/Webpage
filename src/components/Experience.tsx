@@ -6,12 +6,13 @@ const displayFont = { fontFamily: "'Cormorant Garamond', serif" };
 export default function Experience() {
   const experiences = [
     {
-      title: "Technology Intern",
+      title: "TechStart Intern",
       company: "Liberty Mutual Insurance",
       img: liberty,
       location: "Plano, TX",
       date: "Jun 2026 - Aug 2026",
-      description: "Currently working at Liberty Mutual as a Technology Intern. :)",
+      description: "My summer at Liberty Mutual was my first experience working on a software engineering team at a large company, and it taught me a lot about what it means to build software that people actually depend on. I worked on a real-time translation platform for technical support agents, where I focused primarily on the backend and API development. I really enjoyed taking something that started as an idea and turning it into a working system while learning from the engineers around me. This experience gave me a much better understanding of backend engineering and made me even more excited about building software professionally."
+
     },
     {
       title: "Software Engineer Intern",
@@ -20,7 +21,7 @@ export default function Experience() {
       location: "Remote",
       date: "Jun 2025 – Sep 2025",
       description:
-        "Worked on the full-stack engineering team building production UI features with React, TypeScript, and Tailwind CSS. Contributed to their main dashboard used by 500+ enterprise clients. Learned how to navigate and contribute to a large production codebase.",
+        "At Zof AI, I got my first opportunity to work on software for an enterprise AI product. I spent most of my time building frontend features with React and TypeScript, working closely with other engineers to turn ideas and requirements into polished experiences for customers. It was especially valuable getting to see how the things I built fit into a larger product rather than existing as isolated projects. The experience helped me become much more comfortable working on a team and gave me a stronger foundation in frontend development.",
     },
     {
       title: "Participant",
@@ -59,7 +60,7 @@ export default function Experience() {
               {/* Timeline dot */}
               <div className="absolute -left-8 top-6 w-2 h-2 rounded-full bg-zinc-600 group-hover:bg-white transition-colors duration-300" />
 
-              <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-6 hover:border-zinc-600 transition-colors duration-300">
+              <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-6 hover:border-zinc-600 text-white transition-colors duration-300">
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
                   <div className="flex gap-4 items-center">
                     <img
@@ -82,7 +83,7 @@ export default function Experience() {
                     <p className="text-zinc-600 text-xs mt-1">{exp.location}</p>
                   </div>
                 </div>
-                <p className="text-zinc-400 text-sm leading-relaxed">{exp.description}</p>
+                <p className="text-zinc-400 text-sm leading-relaxed hover:text-white">{exp.description}</p>
               </div>
             </div>
           ))}
