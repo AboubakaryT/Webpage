@@ -1,11 +1,20 @@
 import liberty from "../assets/images.png";
 import zof from "../assets/Zof.jpeg";
 import nvidia from "../assets/nvidia.jpg";
+import Todd from "../assets/Todd.jpeg";
 const displayFont = { fontFamily: "'Cormorant Garamond', serif" };
 
 export default function Experience() {
   const experiences = [
     {
+      title:"Software Engineer Intern",
+      company: "Todd Agriscience",
+      img: Todd,
+      location: "Remote",
+      date: "Sep 2026 - Dec 2026",
+      description: "Incoming SWE Intern @ TODD :) "
+      },
+    {    
       title: "TechStart Intern",
       company: "Liberty Mutual Insurance",
       img: liberty,
