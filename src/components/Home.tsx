@@ -38,7 +38,7 @@ export default function Home() {
 
           {/* Tags row */}
           <div className="fade-up fade-up-delay-2 flex flex-wrap gap-3 justify-center lg:justify-start mb-8">
-            {["CS @ UB", "AI Concentration", "First-Gen", "Rising Junior"].map((tag) => (
+            {["CS @ UB", "AI Concentration", "First-Gen", "Junior"].map((tag) => (
               <span
                 key={tag}
                 className="text-xs px-4 py-2 rounded-full border border-blue-500/30 bg-blue-500/5 text-blue-300 tracking-wide uppercase font-medium hover:border-blue-500/60 hover:bg-blue-500/10 transition-all duration-300"
@@ -91,7 +91,7 @@ export default function Home() {
           {/* Social links */}
           <div className="fade-up fade-up-delay-4 flex gap-6 mt-8 justify-center lg:justify-start">
             <a
-              href="https://github.com"
+              href="https://github.com/AboubakaryT"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full border border-zinc-700 text-zinc-400 hover:border-blue-500 hover:text-blue-400 transition-all duration-300 hover:bg-blue-500/5"
@@ -99,7 +99,7 @@ export default function Home() {
               <FaGithub size={20} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/aboubakary/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full border border-zinc-700 text-zinc-400 hover:border-blue-500 hover:text-blue-400 transition-all duration-300 hover:bg-blue-500/5"
@@ -107,7 +107,7 @@ export default function Home() {
               <FaLinkedin size={20} />
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:atraore.dev@gmail.com"
               className="p-3 rounded-full border border-zinc-700 text-zinc-400 hover:border-blue-500 hover:text-blue-400 transition-all duration-300 hover:bg-blue-500/5"
             >
               <FaEnvelope size={20} />

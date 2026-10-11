@@ -22,8 +22,8 @@ export default function Projects() {
       Name: "HackYourHeart",
       img: hackYourHeart,
       description: "A health monitoring application built at HackMIT that explores the integration of hardware sensors with software systems to collect and visualize real-time health data.",
-      github: "",
-      live: "",
+      github: "https://github.com/shaunika1/hackmit2025",
+      live: "https://www.youtube.com/watch?v=TgkCfh6O53s",
       tags: ["Hardware", "IoT", "React", "Data Visualization"]
     },
     {
