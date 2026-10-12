@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 
 export default function Stats() {
   const stats = [
-    { number: "4+", label: "Years of Coding", icon: "💻" },
-    { number: "3", label: "Internships Completed", icon: "🚀" },
+    { number: "2+", label: "Years of Coding", icon: "💻" },
+    { number: "2", label: "Internships Completed", icon: "🚀" },
     { number: "15+", label: "Projects Built", icon: "🏗️" },
     { number: "100%", label: "Passion for Excellence", icon: "⭐" },
   ];

@@ -13,7 +13,7 @@ export default function Education() {
       date: "2025 – 2028",
       description:
         "Studying Computer Science with a concentration in Artificial Intelligence. Relevant coursework includes Data Structures & Algorithms, Systems Programming, Discrete Mathematics, and Calculus II. Active member of UB ACM as Underclassmen Representative.",
-      achievements: ["AI Concentration", "ACM Leadership", "Dean's List"]
+      achievements: ["AI Concentration", "ACM Vice President"]
     },
     {
       school: "Lehman College",
